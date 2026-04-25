@@ -254,7 +254,7 @@
             <input type="text" name="mensaje" placeholder="ingrese mensaje que quiere agregar " required>
 
              
-            <input type="submit" value="Finalizar PEDIDO AHORA">
+            <input type="submit" name="enviar" value="Finalizar PEDIDO AHORA">
         </form>
     </nav>
 
