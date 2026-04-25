@@ -236,7 +236,7 @@
 
     <nav id="pedido" class="seccion-grande">
         <h2>Formulario de Pedido Especial</h2>
-        <form action="pasteleriay.php" method="POST">
+        <form action="conection.php" method="POST">
             <label>Nombre del Cliente:</label>
             <input type="text" name="cliente" placeholder="Tu nombre completo" required>
             
@@ -244,11 +244,11 @@
              <input type="text" name="postre" placeholder="ingrese su postre" required>
             
 
-            <label>ingrese numero de telefono</label>
+            <label>ingrese su correo</label>
             <input type="text" name="correo" placeholder="ingrese su correo" required>
 
             <label>ingrese cantidad de producto</label>
-            <input type="text" name="cantidad" placeholder="cantidad de producto solicitado" required>
+            <input type="int" name="cantidad" placeholder="cantidad de producto solicitado" required>
 
             <label>ingrese mensaje que agregara</label>
             <input type="text" name="mensaje" placeholder="ingrese mensaje que quiere agregar " required>

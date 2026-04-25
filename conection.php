@@ -13,12 +13,11 @@
 
     $sql="INSERT INTO pedidos(cliente, postre, correo,cantidad,mensaje) VALUES ('$cliente', '$postre', '$correo','$cantidad','$mensaje')";
 
- $query = mysql_query($con,$sql);
-
- if ($query) {
-    echo "usuario insertado correctamente";
- }else{
-    echo "usuario no agregado";
- }
+ if($query){
+        echo "¡Éxito! Usuario insertado.";
+    } else {
+        // ESTA LÍNEA ES CLAVE: Te dirá qué tiene de malo tu base de datos
+        echo "Error de SQL: " . mysqli_error($con);
+    }
 }
 ?>
